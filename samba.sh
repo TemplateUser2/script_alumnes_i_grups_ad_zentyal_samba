@@ -18,6 +18,7 @@ do
                 alum=alumne"$Numalu$frase"
                 echo "$alum"
 		samba-tool user add "$alum" "$alum"
+		samba-tool group addmembers "$frase" "$alum"
                 Numalu=$(( $Numalu + 1))
         done
         Num=$(( $Num + 1))
