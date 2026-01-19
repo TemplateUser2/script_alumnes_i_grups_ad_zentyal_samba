@@ -25,8 +25,13 @@ for letra in {a..d}; do
 echo "4eso$letra"
 done
 }
-
+alumnos() {
+for num in {1..30}; do
+echo "alumno$1_$num"
+done
+}
 1eso
 2eso
 3eso
 4eso
+alumnos "1eso"
