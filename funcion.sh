@@ -30,6 +30,18 @@ for num in {1..30}; do
 echo "alumno$1_$num"
 done
 }
+
+niveles() {
+# Definir el array
+niveles=("1eso" "2eso" "3eso" "4eso")
+
+# for en la lista de cadenas de caracteres
+for nivel in "${niveles[@]}"; do
+    echo "Nivel: $nivel"
+    alumnos "$nivel"
+done
+}
+niveles
 1eso
 2eso
 3eso
