@@ -27,7 +27,8 @@ done
 }
 alumnos() {
 for num in {1..30}; do
-echo "alumno$1_$num"
+samba-tool user add "alumno$1_$num" "alumno$1_$num"
+samba-tool group addmembers "$nivel" "alumno$1_$num"
 done
 }
 
@@ -38,6 +39,7 @@ niveles=("1esoA" "1esoB" "1esoC" "1esoD")
 # for en la lista de cadenas de caracteres
 for nivel in "${niveles[@]}"; do
 #    echo "Nivel: $nivel"
+samba-tool group add "$nivel"
     alumnos "$nivel"
 done
 }
@@ -49,6 +51,7 @@ niveles=("2esoA" "2esoB" "2esoC" "2esoD")
 # for en la lista de cadenas de caracteres
 for nivel in "${niveles[@]}"; do
 #    echo "Nivel: $nivel"
+samba-tool group add "$nivel"
     alumnos "$nivel"
 done
 }
@@ -60,6 +63,7 @@ niveles=("3esoA" "3esoB" "3esoC" "3esoD")
 # for en la lista de cadenas de caracteres
 for nivel in "${niveles[@]}"; do
 #    echo "Nivel: $nivel"
+samba-tool group add "$nivel"
     alumnos "$nivel"
 done
 }
@@ -71,6 +75,7 @@ niveles=("4esoA" "4esoB" "4esoC" "4esoD")
 # for en la lista de cadenas de caracteres
 for nivel in "${niveles[@]}"; do
 #    echo "Nivel: $nivel"
+samba-tool group add "$nivel"
     alumnos "$nivel"
 done
 }
