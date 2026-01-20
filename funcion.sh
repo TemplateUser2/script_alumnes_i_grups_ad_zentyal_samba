@@ -41,7 +41,43 @@ for nivel in "${niveles[@]}"; do
     alumnos "$nivel"
 done
 }
+
+niveles2eso() {
+# Definir el array
+niveles=("2esoA" "2esoB" "2esoC" "2esoD")
+
+# for en la lista de cadenas de caracteres
+for nivel in "${niveles[@]}"; do
+#    echo "Nivel: $nivel"
+    alumnos "$nivel"
+done
+}
+
+niveles3eso() {
+# Definir el array
+niveles=("3esoA" "3esoB" "3esoC" "3esoD")
+
+# for en la lista de cadenas de caracteres
+for nivel in "${niveles[@]}"; do
+#    echo "Nivel: $nivel"
+    alumnos "$nivel"
+done
+}
+
+niveles4eso() {
+# Definir el array
+niveles=("4esoA" "4esoB" "4esoC" "4esoD")
+
+# for en la lista de cadenas de caracteres
+for nivel in "${niveles[@]}"; do
+#    echo "Nivel: $nivel"
+    alumnos "$nivel"
+done
+}
 niveles1eso
+niveles2eso
+niveles3eso
+niveles4eso
 #1eso
 #2eso
 #3eso
